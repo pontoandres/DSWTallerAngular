@@ -10,6 +10,7 @@ import { SerieService } from './serie.service';
 export class SerieComponent implements OnInit {
 
   series: Array<Serie> = [];
+  selectedSerie: Serie | null = null;
   averageSeasons: number = 0;
 
   constructor( private serieService: SerieService) { }
@@ -32,4 +33,9 @@ export class SerieComponent implements OnInit {
     }
     this.averageSeasons = totalSeasons / this.series.length;
   }
+
+  onSelect(serie: Serie): void {
+    this.selectedSerie = serie;
+  }
+  
 }

@@ -1,7 +1,7 @@
 #seriesTable {
     margin-left: 15%;
     margin-top: 2%;
-    border: 2px solid #000080; 
+    border: 2px solid #1794dd; 
 }
 
 #average {
@@ -10,6 +10,16 @@
 }
 
 .table th {
-    background-color: #000080; 
-    color: white;
+    background-color: #1794dd; 
+    color: rgb(0, 0, 0);
+}
+
+.table td {
+    background-color: #e3e3e3; 
+    
+}
+
+.clickable-cell {
+    color: blue;
+    cursor: pointer;
 }
