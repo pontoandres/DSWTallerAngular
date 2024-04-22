@@ -1,31 +1,29 @@
-<div class="container-fluid">
-  <div class="col-6">
-    <table class="table">
-      <thead>
-        <tr>
-          <th class="h4">ID</th>
-          <th class="h4">Name</th>
-          <th class="h4">Channel</th>
-          <th class="h4">Seasons</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let serie of series">
-          <td>
-            <dd>{{serie.id}}</dd>
-          </td>
-          <td>
-            <dd>{{serie.name}}</dd>
-          </td>
-          <td>
-            <dd>{{serie.channel}}</dd>
-          </td>
-          <td>
-            <dd>{{serie.seasons}}</dd>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p>El promedio de temporadas de todas las series es: {{averageSeasons}}</p>
+<div class="container-12">
+  <div class="row-12" style="background-color: #000080;">
+    <h4 style="color: white;">TV series</h4>
+  </div>
+  <div class="row">
+    <div class="col-5">
+      <table class="table" id="seriesTable">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Channel</th>
+            <th scope="col">Seasons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let serie of series">
+            <td>{{serie.id}}</td>
+            <td>{{serie.name}}</td>
+            <td>{{serie.channel}}</td>
+            <td>{{serie.seasons}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="serieDetalle" class="col-5 card"></div>
+      <p id="average">El promedio de temporadas de todas las series es: {{averageSeasons}}</p>
+    </div>
   </div>
 </div>

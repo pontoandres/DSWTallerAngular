@@ -1,0 +1,15 @@
+#seriesTable {
+    margin-left: 15%;
+    margin-top: 2%;
+    border: 2px solid #000080; 
+}
+
+#average {
+    margin-left: 15%;
+    color: #000080; 
+}
+
+.table th {
+    background-color: #000080; 
+    color: white;
+}
